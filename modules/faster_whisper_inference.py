@@ -300,7 +300,7 @@ class FasterWhisperInference(BaseInterface):
             device=self.device,
             model_size_or_path=model_size,
             download_root=os.path.join("models", "Whisper", "faster-whisper"),
-            compute_type="float16"
+            compute_type="float32"
         )
 
     def get_total_frames(self,
